@@ -5,6 +5,7 @@ export const routes = {
   private: [
     { path: "/dashboard", component: HomeScene },
     { path: "/dashboard/reports", component: ReportScene },
+    { path: "/dashboard/audit", component: auditScene},
   ],
   public: [{ path: "/login", component: LoginPage }],
 };
