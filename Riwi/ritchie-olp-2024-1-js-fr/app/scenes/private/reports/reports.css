@@ -1,10 +1,4 @@
-div {
-    padding: 20px;
-    background-color: #e0f7fa;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-h2 {
-    margin: 0 0 10px 0;
+.contenedor{
+    background: blue;
+    margin-left:17rem ;
 }

@@ -96,3 +96,6 @@ export async function Router() {
 
 // Manejar el evento de retroceso/avance en el navegador
 window.onpopstate = Router;
+
+// Inicializar el router
+Router();
