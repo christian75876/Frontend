@@ -28,32 +28,27 @@ if (!customElements.get("navigation-bar")) {
       position: fixed;
       top: 0;
       left: 0;
-      width: 17rem; 
-      height: 100vh;
+      width: 100%; /* Cambiado el ancho */
+      height: 4rem; /* Reducido la altura */
       background: rgb(125, 53, 192);
       font-weight: 900;
       color: white;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: center; /* Centrado horizontal */
       padding: 1em;
     }
     
     .list {
-      width: 100%;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; /* Cambiado de align-content a align-items */
-      gap: 4em;
-      border-radius: 0 16px 16px 0;
+      flex-direction: row; /* Cambiado a fila */
+      justify-content: space-between; /* Espaciado entre elementos */
+      align-items: center; /* Centrado vertical */
+      gap: 2em; /* Reducido el espacio entre elementos */
     }
     
     .list_item {
       list-style: none;
-      width: 100%;
       text-align: center;
-      overflow: hidden;
       color: inherit;
       text-decoration: none;
       transition: all ease 1s;
@@ -65,35 +60,38 @@ if (!customElements.get("navigation-bar")) {
     }
     
     .list_item--click{
-      cursor: pointer
+      cursor: pointer;
     }
     
-      </style>
+    .list_inside {
+      list-style: none;
+      display:flex;
+    }
 
-        <ul class = "list">
-        <li class="list_item nav_item"" id="home"><a href="#" class="list_item">🏠 Home</a></li>
+</style>
+</head>
+<body>
+<div class="nav">
+    <ul class="list">
+        <li class="list_item nav_item" id="home"><a href="#" class="list_item">🏠 Home</a></li>
         <li class="list_item nav_item"><a href="#" class="list_item">🎮 Juegos</a></li>
         <li class="list_item nav_item"><a href="#" class="list_item">🏆 Ligas</a></li>
         <li class="list_item nav_item"><a href="#" class="list_item">🏅 Desafíos</a></li>
-         <li class = "list_item list_item--click">≡
+        <li class="list_item list_item--click">≡
             <ul>
-                <li class="list_inside >
-                    <a href="#">Estoy Dentro</a>
-                </li>
                 <li class="list_inside">
-                    <a href="#">Estoy Dentro</a>
-                </li>
-                <li class="list_inside">
-                <nav>
-                <button id="logout">Logouts</button>
-                <br>
-                <button id="reports">Reportes</button>
-                </nav>
+                    <nav>
+                        <button id="logout">Logouts</button>
+                        <br>
+                        <button id="reports">Reportes</button>
+                    </nav>
                 </li>
             </ul>
         </li>
     </ul>
-       
+</div>
+</body>
+</html>
         `;
       shadow.appendChild(nav);
       //Logout
