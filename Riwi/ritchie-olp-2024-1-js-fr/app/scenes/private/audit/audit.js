@@ -1,7 +1,7 @@
 import "./audit.css";
 import "../../../components/navigation-bar/navigation-bar";
 
-export function auditScene(){
+export function AuditScene(){
     const root = document.getElementById("root");
 
     root.innerHTML = `
