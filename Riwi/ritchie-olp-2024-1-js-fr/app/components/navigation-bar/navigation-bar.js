@@ -102,7 +102,7 @@ if (!customElements.get("navigation-bar")) {
       //Reports
       const reportsButton = shadow.getElementById("reports");
       reportsButton.addEventListener("click", () =>
-        navigateTo("/dashboard/reports")
+        navigateTo("/dashboard/audit")
       );
       // Home
       let Home = shadow.getElementById("home");

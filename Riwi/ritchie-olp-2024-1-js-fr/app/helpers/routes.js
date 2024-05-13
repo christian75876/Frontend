@@ -1,5 +1,5 @@
 import { LoginPage } from "../scenes/public/login";
-import { HomeScene, ReportScene } from "../scenes/private";
+import { HomeScene, ReportScene ,auditScene} from "../scenes/private";
 
 export const routes = {
   private: [
