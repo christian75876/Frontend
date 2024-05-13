@@ -71,7 +71,7 @@ if (!customElements.get("navigation-bar")) {
 </style>
 </head>
 <body>
-<div class="nav">
+<div class="nav" part="navigation">
     <ul class="list">
         <li class="list_item nav_item" id="home"><a href="#" class="list_item">🏠 Home</a></li>
         <li class="list_item nav_item"><a href="#" class="list_item">🎮 Juegos</a></li>
