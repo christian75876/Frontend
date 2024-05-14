@@ -1,21 +1,26 @@
 import "./audit.css";
 import "../../../components/navigation-bar/navigation-bar";
 
-export function AuditScene(){
-    const root = document.getElementById("root");
+export function AuditScene() {
+  const root = document.getElementById("root");
 
-    root.innerHTML = `
+  root.innerHTML = `
     <navigation-bar id="navigation-bar"></navigation-bar> 
     <h2>Esta es pagina de auditoria</h2>
-    <table>
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Hora de Logueo</th>
-            <th>Hora de Deslogueo</th>
-            <th>Eventos</th>
-          </tr>
-        </thead>
-    </table>
-    `
+    <div id="table">
+        <table>
+            <thead>
+              <tr>
+								<th><a>Date and time</a></th>
+                <th><a>User</a></th>
+								<th><a>Roll</a></th>
+								<th><a>Clan</a></th>
+                <th><a>time this Logueo</a></th>
+                <th><a>time this logouth</a></th>
+                <th><a>Event</a></th>
+              </tr>
+            </thead>
+        </table>
+    </div>
+    `;
 }
