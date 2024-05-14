@@ -11,13 +11,13 @@ export function AuditScene() {
         <table>
             <thead>
               <tr>
-								<th><a>Date and time</a></th>
-                <th><a>User</a></th>
-								<th><a>Roll</a></th>
-								<th><a>Clan</a></th>
-                <th><a>time this Logueo</a></th>
-                <th><a>time this logouth</a></th>
-                <th><a>Event</a></th>
+								<th><a>Date and time<span class"icon">🔍</span></a></th>
+                <th><a>User<span class"icon">🔍</span></a></th>
+								<th><a>Roll<span class"icon">🔍</span></a></th>
+								<th><a>Clan<span class"icon">🔍</span></a></th>
+                <th><a>time this Logueo<span class"icon">🔍</span></a></th>
+                <th><a>time this logouth<span class"icon">🔍</span></a></th>
+                <th><a>Event<span class"icon">🔍</span></a></th>
               </tr>
             </thead>
         </table>
