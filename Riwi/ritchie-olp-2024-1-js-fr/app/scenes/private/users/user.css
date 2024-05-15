@@ -1,1 +1,6 @@
-
+ #contenedor {
+    display: flex;
+    justify-content: end;
+    border: none;
+    color: #fff;
+ }
