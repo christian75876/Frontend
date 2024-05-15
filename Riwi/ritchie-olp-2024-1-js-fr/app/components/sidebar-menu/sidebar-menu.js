@@ -11,7 +11,7 @@ if (!customElements.get("side-bar")) {
       nav.classList.add("nav");
 
       nav.innerHTML = `
-      <style>@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+      <style>
 
       @keyframes checked-anim {
           50% {
@@ -32,7 +32,7 @@ if (!customElements.get("side-bar")) {
       }
       li, a {
           margin: 75px 0 -55px 0;
-          color: #03A9F4;
+          color: red;
           font: 14pt "Roboto", sans-serif;
           font-weight: 700;
           line-height: 1.8;
