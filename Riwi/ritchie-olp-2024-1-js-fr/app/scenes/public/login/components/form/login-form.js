@@ -16,6 +16,7 @@ export async function LoginFormComponent() {
         <input type="password" id="password" name="password" autocomplete="current-password">
         <button type="submit">Login</button>
     </form>
+    <h4>Derechos Reservados &copy; RIWI Clan Ritchie</h4>
     <div class="container">
           <div class="shade"></div>
           <div class="shade shade2"></div>
