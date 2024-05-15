@@ -14,10 +14,10 @@ export function AuditScene() {
               <tr id="head">
 								<th><a>Date and time<span class"icon">🔍</span></a></th>
                 <th><a>User<span class"icon">🔍</span></a></th>
-								<th><a>Roll<span class"icon">🔍</span></a></th>
+								<th><a>Role<span class"icon">🔍</span></a></th>
 								<th><a>Clan<span class"icon">🔍</span></a></th>
-                <th><a>time this Logueo<span class"icon">🔍</span></a></th>
-                <th><a>time this logouth<span class"icon">🔍</span></a></th>
+                <th><a>LogIn Time<span class"icon">🔍</span></a></th>
+                <th><a>LogOut Time<span class"icon">🔍</span></a></th>
                 <th><a>Event<span class"icon">🔍</span></a></th>
               </tr>
             </thead>

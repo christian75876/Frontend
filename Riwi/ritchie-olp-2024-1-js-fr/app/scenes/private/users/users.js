@@ -1,6 +1,6 @@
-import "./new-useer.css";
+import "./user.css";
 
-export function NewUser() {
+export function User() {
   root.addEventListener("click", () => {});
   contenedor();
 }
