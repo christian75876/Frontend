@@ -1,9 +1,9 @@
 import "./navigation-bar.css";
 import { logOut } from "../../helpers/log-out";
 import { navigateTo } from "../../Router";
-import "../navigation-bar/navigation-bar";
+import "../sidebar-menu";
 
-if (!customElements.get("navigation-bar")) {
+if (!customElements.get("side-bar")) {
   class SideBar extends HTMLElement {
     constructor() {
       super();
@@ -110,5 +110,5 @@ if (!customElements.get("navigation-bar")) {
     }
   }
 
-  customElements.define("Side-Bar", SideBar);
+  customElements.define("side-bar", SideBar);
 }

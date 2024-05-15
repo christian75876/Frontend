@@ -6,6 +6,7 @@ export function HomeScene() {
 
   root.innerHTML = `
   <navigation-bar id="navigation-bar"></navigation-bar>
+  <side-bar></side-bar>
   
     
   `;

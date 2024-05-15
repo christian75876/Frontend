@@ -1,14 +1,21 @@
 import "./user.css";
+import { navigateTo } from "../../../Router";
+import "../../../components/navigation-bar/navigation-bar";
 
 export function User() {
-  root.addEventListener("click", () => {});
-  contenedor();
-}
+  const root = document.getElementById("root");
+  root.innerHTML = `
+    <navigation-bar></navigation-bar>
+    
+      
+    `;
 
-const contenedor = () => {
-  const newUser = document.createElement("div");
-  newUser.innerHTML = `
-    <div>Hola mundo</div>
-`;
-  console.log("hola");
-};
+  const reportsButton = document.createElement("button");
+  reportsButton.textContent = "Ver Reportes";
+  reportsButton.id = "reports";
+  reportsButton.addEventListener("click", () =>
+    navigateTo("/dashboard/reports")
+  );
+
+  //
+}

@@ -83,7 +83,9 @@ if (!customElements.get("navigation-bar")) {
                     <nav>
                         <button id="logout">Logouts</button>
                         <br>
-                        <button id="reports">Reportes</button>
+                        <button id="reports">Audit trail</button>
+                        <br>
+                        <button id="users">Usuarios</button>
                     </nav>
                 </li>
             </ul>
@@ -103,6 +105,10 @@ if (!customElements.get("navigation-bar")) {
         navigateTo("/dashboard/audit")
       );
       // Home
+      const userDasboard = shadow.getElementById("users");
+      userDasboard.addEventListener("click", () =>
+        navigateTo("/dashboard/user")
+      );
       let Home = shadow.getElementById("home");
       Home.addEventListener("click", () => navigateTo("/dashboard"));
     }
