@@ -36,3 +36,23 @@ td {
   background-color: #fff;
   text-align: center;
 }
+
+
+#messageSection {
+  position: absolute;
+  z-index: 4;
+}
+
+#userForm{
+  background-color: #7e819a;
+}
+
+/* .labelUser {
+  background-color: chartreuse;
+  margin-bottom: 0;
+}
+
+.inputUser {
+  margin: 0;
+  padding: 0;
+} */

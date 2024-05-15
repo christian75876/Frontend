@@ -33,9 +33,56 @@ export function AuditScene() {
               </tr>
             </tbody>
         </table>
+        <section id="messageSection" style="display: none;">
+      <p id="message"></p>
+    </section>
     </div>
     `;
 
-  //   let Home = innerHTML.getElementById("home");
-  //   Home.addEventListener("click", () => navigateTo("/dashboard"));
+    let aux = false;
+
+    const btn = document.querySelector('button');
+    const messageSection = document.getElementById('messageSection');
+    const messageParagraph = document.getElementById('message');
+
+    btn.addEventListener('click', () => {
+      // Mostrar el mensaje
+      if(aux) return;
+      messageParagraph.textContent = null;
+      messageSection.style.display = 'block';
+    
+      // Lógica adicional
+      const messageHTML = `
+      <form id="userForm">
+      <label class="labelUser" for="firstName">Nombre:</label>
+      <input class="inputUser" type="text" id="firstName" name="firstName" required>
+    
+      <label class="labelUser" for="lastName">Apellido:</label>
+      <input class="inputUser" type="text" id="lastName" name="lastName" required>
+    
+      <label class="labelUser" for="phone">Teléfono:</label>
+      <input class="inputUser" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    
+      <label class="labelUser" for="clan">Clan:</label>
+      <input class="inputUser" type="text" id="clan" name="clan" required>
+    
+      <button type="submit">Crear Usuario</button>
+      <button id="closeMessage">Cerrar</button>
+    </form>       
+      `;
+
+      messageParagraph.innerHTML += messageHTML;
+      aux = true;
+    
+      // Agregar un evento para cerrar el mensaje
+      const closeButton = document.getElementById('closeMessage');
+      closeButton.addEventListener('click', () => {
+        // Ocultar el mensaje al hacer clic en el botón de cerrar
+        aux = false;
+
+        messageSection.style.display = 'none';
+      });
+    });
+    
+
 }
