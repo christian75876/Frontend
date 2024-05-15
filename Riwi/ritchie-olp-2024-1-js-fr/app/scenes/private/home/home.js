@@ -1,5 +1,5 @@
 import "./home.css";
-import "../../../components/navigation-bar/navigation-bar";
+import "../../../components/sidebar-menu/sidebar-menu"
 
 export function HomeScene() {
   const root = document.getElementById("root");

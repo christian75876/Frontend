@@ -46,4 +46,24 @@ main {
 img {
     max-width: 100%;
     height: auto;
-}
+} 
+
+
+navigation-bar {
+    display: block; 
+  }
+  
+  side-bar {
+    display: none; 
+  }
+  
+  @media (max-width: 768px) {
+    navigation-bar {
+      display: none; 
+    }
+  
+    side-bar {
+      display: block; 
+    }
+  }
+  
