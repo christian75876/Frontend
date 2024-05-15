@@ -21,6 +21,7 @@ export function AuditScene() {
                 <th><a>Event<span class"icon">🔍</span></a></th>
               </tr>
             </thead>
+            <section id="filter" style="display: none" ></section>
             <tbody>
               <tr>
                 <td>hola</td>
@@ -33,8 +34,6 @@ export function AuditScene() {
               </tr>
             </tbody>
         </table>
-        <section id="filter" style="display: none" >
-        </section>
         <section id="messageSection" style="display: none;">
       <p id="message"></p>
     </section>
@@ -106,7 +105,6 @@ export function AuditScene() {
         <label class="filter-label" for="filterType">Filter By:</label>
         <select class="filter-input" id="filterType" name="filterType">
           <option value="userId">User ID</option>
-          <option value="date">Date</option>
           <option value="clan">Clan</option>
           <option value="role">Role</option>
         </select>
