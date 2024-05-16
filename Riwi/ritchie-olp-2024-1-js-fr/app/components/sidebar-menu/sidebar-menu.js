@@ -1,3 +1,4 @@
+import "./sidebar-menu.css";
 import { logOut } from "../../helpers/log-out";
 import { navigateTo } from "../../Router";
 import "../sidebar-menu";
@@ -32,8 +33,7 @@ if (!customElements.get("side-bar")) {
       }
       li, a {
           margin: 75px 0 -55px 0;
-          color: red;
-          font: 14pt "Roboto", sans-serif;
+          color: #fff;
           font-weight: 700;
           line-height: 1.8;
           text-decoration: none;
@@ -80,7 +80,6 @@ if (!customElements.get("side-bar")) {
           margin: 0;
           padding: 0;
           background-color: #03A9F4;
-          font-family: 'Roboto', sans-serif;
           overflow: hidden;
       }
       
@@ -152,7 +151,7 @@ if (!customElements.get("side-bar")) {
       <input type="checkbox" id="menu-toggle"/>
       <label id="trigger" for="menu-toggle"></label>
       <label id="burger" for="menu-toggle"></label>
-      <ul id="menu">
+      <ul id="menu" part="menu">
       <li class="list_item nav_item" id="home"><a href="#" class="list_item">🏠 Home</a></li>
       <li class="list_item nav_item"><a href="#" class="list_item">🎮 Juegos</a></li>
       <li class="list_item nav_item"><a href="#" class="list_item">🏆 Ligas</a></li>

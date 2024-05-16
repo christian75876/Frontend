@@ -1,29 +1,9 @@
-aside {
-    position: fixed;
-    top: 50px;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #444;
-    color: #fff;
-    padding: 20px;
-    z-index: 5;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 15px;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-a:hover {
-    text-decoration: underline;
-}
+side-bar{
+    margin-left: 3rem;
+  }
+  
+  side-bar::part(menu) {
+    /* Estilos para el elemento marcado con part="navigation" */
+    background-color:#7748cd
+  }
+  
