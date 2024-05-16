@@ -1,6 +1,28 @@
- #contenedor {
-    display: flex;
+ /* #contenedor {
+    display: grid;
+    grid-column: 1fr 1fr;
     justify-content: end;
     border: none;
     color: #fff;
  }
+ 
+#messageSection {
+   position: absolute;
+   left: 24px;
+   top: 240px;
+   z-index: 4;
+ }
+ 
+ #userForm{
+   background-color: #7e819a;
+ }
+ 
+ #filterForm {
+   width: 20vw;
+ } */
+
+ .page-title {
+   font-size: var(--font-size-base);
+   color: var(--info-color);
+   margin-bottom: 20px;
+}

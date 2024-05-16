@@ -1,4 +1,4 @@
-import "./audit.css";
+// import "./audit.css";
 import "../../../components/navigation-bar/navigation-bar";
 
 export function AuditScene() {

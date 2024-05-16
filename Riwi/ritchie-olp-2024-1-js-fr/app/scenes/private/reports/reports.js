@@ -1,4 +1,4 @@
-import "./reports.css";
+// import "./reports.css";
 import { navigateTo } from "../../../Router";
 import "../../../components/navigation-bar/navigation-bar";
 

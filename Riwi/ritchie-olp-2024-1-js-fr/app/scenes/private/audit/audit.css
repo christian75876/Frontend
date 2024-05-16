@@ -43,16 +43,4 @@ td {
 }
 
 
-#messageSection {
-  position: absolute;
-  z-index: 4;
-}
-
-#userForm{
-  background-color: #7e819a;
-}
-
-#filterForm {
-  width: 20vw;
-}
 

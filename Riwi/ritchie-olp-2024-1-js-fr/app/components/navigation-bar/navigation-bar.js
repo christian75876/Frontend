@@ -1,4 +1,4 @@
-import "./navigation-bar.css";
+// import "./navigation-bar.css";
 import { logOut } from "../../helpers/log-out";
 import { navigateTo } from "../../Router";
 import "../navigation-bar/navigation-bar";

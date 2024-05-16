@@ -1,4 +1,4 @@
-import "./home.css";
+// import "./home.css";
 import "../../../components/sidebar-menu/sidebar-menu"
 
 export function HomeScene() {

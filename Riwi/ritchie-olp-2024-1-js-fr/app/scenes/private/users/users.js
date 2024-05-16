@@ -6,7 +6,8 @@ export function User() {
   const root = document.getElementById("root");
   root.innerHTML = `
     <navigation-bar></navigation-bar>
-    <h2>Usuarios</h2>
+    <main>
+      <h2 class=${styles['page-title']}>Usuarios</h2>
     <button id="home">New User</button>
     <div id="contenedor">
       <table>
@@ -18,6 +19,7 @@ export function User() {
           </tr>
         </thead>
       </table>
+    </main>
     <section id="messageSection" style="display: none;">
       <p id="message"></p>
     </section>
